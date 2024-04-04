@@ -1,0 +1,58 @@
+.container{
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;    
+  flex:1 ;
+  animation: body 5s ease-out infinite;
+
+}
+
+@keyframes rotate {
+  0%{
+      transform: rotate(0deg);
+  } 
+  50%{
+      transform: rotate(180deg);
+  } 
+}
+
+@keyframes body {
+  0%{
+      background-color: lightblue;
+  } 
+  50%{
+      background-color: rgb(24, 23, 23);
+  } 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.cloud{
+  width: 15%;
+  
+}
+
+.pos{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+  animation: rotate 5s linear infinite;
+}
+
+.day{
+  width: 10%;
+}
+
+.night{ 
+  width: 7%;
+}
